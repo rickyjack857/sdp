@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Indian heritage places and plan responsible visits with HeritageTrail.">
+
+  <title>HeritageTrail | Discover Heritage</title>
+
+  <link rel="stylesheet" href="style1.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a class="brand" href="#">
+        <span class="brand-mark">H</span>
+        <span>
+          <strong>HeritageTrail</strong>
+          <small>Discover · Respect · Preserve</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+
+      <nav class="primary-nav" id="primaryNav">
+        <a class="active" href="#discover">Discover</a>
+        <a href="#about">About</a>
+        <a href="#responsible">Travel responsibly</a>
+        <a class="nav-cta" href="#visit-planner">Plan a visit ↗</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Home Section -->
+    <section class="hero" id="about">
+
+      <div class="hero-copy">
+        <p class="eyebrow">LOCAL HERITAGE DISCOVERY</p>
+
+        <h1>
+          Every place has a story.
+          <br>
+          <em>Find yours.</em>
+        </h1>
+
+        <p class="hero-text">
+          Explore forts, palaces, temples and cultural landmarks
+          across India. Learn before you go, and leave every
+          place better respected.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-light" href="#discover">
+            Explore places ↓
+          </a>
+
+          <a class="text-link" href="#responsible">
+            Our responsible-travel promise
+          </a>
+        </div>
+
+        <div class="hero-note">
+          ✦ Curated discovery for curious and thoughtful travellers
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="sun"></div>
+        <div class="hill hill-back"></div>
+        <div class="hill hill-front"></div>
+
+        <div class="palace">
+          <div class="palace-roof"></div>
+          <div class="palace-top"></div>
+
+          <div class="palace-body">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+
+          <div class="palace-base"></div>
+        </div>
+
+        <span class="art-label">A journey through time</span>
+      </div>
+
+    </section>
+
+    <!-- Highlights -->
+    <section class="stats-strip">
+
+      <div>
+        <strong>4</strong>
+        <span>Featured regions</span>
+      </div>
+
+      <div>
+        <strong>6</strong>
+        <span>Heritage highlights</span>
+      </div>
+
+      <div>
+        <strong>7</strong>
+        <span>Portal modules</span>
+      </div>
+
+      <div>
+        <strong>1</strong>
+        <span>Shared responsibility</span>
+      </div>
+
+    </section>
+
+    <!-- Discover Section -->
+    <section class="discover-section section-wrap" id="discover">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">START EXPLORING</p>
+          <h2>Find a place worth remembering</h2>
+        </div>
+
+        <p class="section-intro">
+          Choose a region or heritage type, or search by name
+          to find a destination.
+        </p>
+      </div>
+
+      <!-- Search and Filters -->
+      <div class="explore-tools">
+
+        <label class="search-box">
+          <span>⌕</span>
+          <input
+            type="search"
+            id="siteSearch"
+            placeholder="Search heritage places..."
+          >
+        </label>
+
+        <label class="select-wrap">
+          <select id="locationFilter">
+            <option value="all">All regions</option>
+            <option value="Mysuru">Mysuru</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+          </select>
+        </label>
+
+        <label class="select-wrap">
+          <select id="categoryFilter">
+            <option value="all">All categories</option>
+            <option value="Palace">Palaces</option>
+            <option value="Fort">Forts</option>
+            <option value="Temple">Temples</option>
+            <option value="Monument">Monuments</option>
+          </select>
+        </label>
+
+        <button class="reset-button" id="resetFilters">
+          Reset
+        </button>
+
+      </div>
+
+      <div class="result-line">
+        <p id="resultCount">Showing 6 heritage places</p>
+        <span>Explore at your own pace</span>
+      </div>
+
+      <!-- Heritage Places -->
+      <div class="site-grid" id="siteGrid">
+
+        <article class="site-card"
+          data-name="Mysore Palace"
+          data-location="Mysuru"
+          data-category="Palace">
+
+          <div class="site-image image-mysore">
+            <img src="assets/mysore.svg" alt="Mysore Palace">
+          </div>
+
+          <div class="site-card-body">
+            <div class="card-meta">
+              <span>MYSURU</span>
+              <span>PALACE</span>
+            </div>
+
+            <h3>Mysore Palace</h3>
+
+            <p>
+              A celebrated royal residence known for its grand
+              architecture and richly decorated halls.
+            </p>
+
+            <a href="#visit-planner" class="card-link">
+              Plan your visit →
+            </a>
+          </div>
+        </article>
+
+        <article class="site-card"
+          data-name="Brihadeeswarar Temple"
+          data-location="Tamil Nadu"
+          data-category="Temple">
+
+          <div class="site-image image-tamil">
+            <img src="assets/tamil-nadu.svg" alt="South Indian temple">
+          </div>
+
+          <div class="site-card-body">
+            <div class="card-meta">
+              <span>TAMIL NADU</span>
+              <span>TEMPLE</span>
+            </div>
+
+            <h3>Brihadeeswarar Temple</h3>
+
+            <p>
+              An important Chola-era temple admired for its
+              monumental stone architecture.
+            </p>
+
+            <a href="#visit-planner" class="card-link">
+              Plan your visit →
+            </a>
+          </div>
+        </article>
+
+        <article class="site-card"
+          data-name="Mehrangarh Fort"
+          data-location="Rajasthan"
+          data-category="Fort">
+
+          <div class="site-image image-rajasthan">
+            <img src="assets/rajasthan.svg" alt="Hilltop fort">
+          </div>
+
+          <div class="site-card-body">
+            <div class="card-meta">
+              <span>RAJASTHAN</span>
+              <span>FORT</span>
+            </div>
+
+            <h3>Mehrangarh Fort</h3>
+
+            <p>
+              A hilltop fort overlooking Jodhpur, with courtyards,
+              galleries and city views.
+            </p>
+
+            <a href="#visit-planner" class="card-link">
+              Plan your visit →
+            </a>
+          </div>
+        </article>
+
+        <article class="site-card"
+          data-name="Sanchi Stupa"
+          data-location="Madhya Pradesh"
+          data-category="Monument">
+
+          <div class="site-image image-sanchi">
+            <img src="assets/sanchi.svg" alt="Sanchi Stupa">
+          </div>
+
+          <div class="site-card-body">
+            <div class="card-meta">
+              <span>MADHYA PRADESH</span>
+              <span>MONUMENT</span>
+            </div>
+
+            <h3>Sanchi Stupa</h3>
+
+            <p>
+              A historic Buddhist monument and an important
+              site of India's cultural heritage.
+            </p>
+
+            <a href="#visit-planner" class="card-link">
+              Plan your visit →
+            </a>
+          </div>
+        </article>
+
+        <article class="site-card"
+          data-name="Hampi Heritage Site"
+          data-location="Mysuru"
+          data-category="Monument">
+
+          <div class="site-image image-hampi">
+            <img src="assets/hampi.svg" alt="Hampi stone ruins">
+          </div>
+
+          <div class="site-card-body">
+            <div class="card-meta">
+              <span>KARNATAKA</span>
+              <span>MONUMENT</span>
+            </div>
+
+            <h3>Hampi Heritage Site</h3>
+
+            <p>
+              Explore the remains of the Vijayanagara-era city
+              among dramatic rocky landscapes.
+            </p>
+
+            <a href="#visit-planner" class="card-link">
+              Plan your visit →
+            </a>
+          </div>
+        </article>
+
+        <article class="site-card"
+          data-name="Khajuraho Temples"
+          data-location="Madhya Pradesh"
+          data-category="Temple">
+
+          <div class="site-image image-khajuraho">
+            <img src="assets/khajuraho.svg" alt="Khajuraho temples">
+          </div>
+
+          <div class="site-card-body">
+            <div class="card-meta">
+              <span>MADHYA PRADESH</span>
+              <span>TEMPLE</span>
+            </div>
+
+            <h3>Khajuraho Temples</h3>
+
+            <p>
+              A group of historic temples recognised for
+              detailed stone craftsmanship.
+            </p>
+
+            <a href="#visit-planner" class="card-link">
+              Plan your visit →
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <strong>No matching places found.</strong>
+        <span>Try another search term or reset the filters.</span>
+      </div>
+
+    </section>
+
+    <!-- Responsible Tourism -->
+    <section class="responsible-section" id="responsible">
+
+      <div class="responsible-inner">
+
+        <div>
+          <p class="eyebrow eyebrow-light">TRAVEL WITH CARE</p>
+
+          <h2>
+            Protect the stories
+            <br>
+            that brought you here.
+          </h2>
+
+          <p>
+            Heritage belongs to everyone. A thoughtful visitor
+            helps preserve it for the next generation.
+          </p>
+        </div>
+
+        <div class="guideline-list">
+
+          <div>
+            <span>01</span>
+            <p>
+              <strong>Keep places clean</strong>
+              <small>Use bins and avoid leaving waste behind.</small>
+            </p>
+          </div>
+
+          <div>
+            <span>02</span>
+            <p>
+              <strong>Respect local culture</strong>
+              <small>Follow customs, signs and site instructions.</small>
+            </p>
+          </div>
+
+          <div>
+            <span>03</span>
+            <p>
+              <strong>Protect monuments</strong>
+              <small>Do not damage, mark or remove heritage objects.</small>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit Planner -->
+    <section class="planner-section section-wrap" id="visit-planner">
+
+      <div class="planner-copy">
+        <p class="eyebrow">YOUR NEXT STEP</p>
+
+        <h2>Make a thoughtful visit plan</h2>
+
+        <p>
+          Use this sample form to practise entering visitor details.
+          This student demonstration validates the form in your
+          browser; it does not check live site availability or
+          create a real booking.
+        </p>
+      </div>
+
+      <form class="planner-form" id="plannerForm">
+
+        <label>
+          Visitor name
+          <input
+            type="text"
+            name="visitor"
+            placeholder="Enter your name"
+            minlength="3"
+            required
+          >
+        </label>
+
+        <label>
+          Preferred destination
+
+          <select name="destination" required>
+            <option value="">Choose a destination</option>
+            <option>Mysore Palace</option>
+            <option>Brihadeeswarar Temple</option>
+            <option>Mehrangarh Fort</option>
+            <option>Sanchi Stupa</option>
+            <option>Hampi Heritage Site</option>
+            <option>Khajuraho Temples</option>
+          </select>
+        </label>
+
+        <div class="form-row">
+
+          <label>
+            Visit date
+            <input type="date" name="visitDate" required>
+          </label>
+
+          <label>
+            Visitors
+            <input
+              type="number"
+              name="visitors"
+              min="1"
+              max="10"
+              value="1"
+              required
+            >
+          </label>
+
+        </div>
+
+        <label class="acknowledge">
+          <input type="checkbox" required>
+          I agree to follow responsible-tourism guidelines.
+        </label>
+
+        <button class="button button-dark" type="submit">
+          Check my details →
+        </button>
+
+        <p class="form-message" id="formMessage"></p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="footer-inner">
+
+      <a class="brand footer-brand" href="#">
+        <span class="brand-mark">H</span>
+
+        <span>
+          <strong>HeritageTrail</strong>
+          <small>Discover · Respect · Preserve</small>
+        </span>
+      </a>
+
+      <p>
+        Local Heritage Discovery and Responsible Tourism Portal
+        <br>
+        <span>Team 10 · 26CS101 Software Development Practices</span>
+      </p>
+
+      <a href="#main-content" class="back-top">
+        Back to top ↑
+      </a>
+
+    </div>
+  </footer>
+
+</body>
+</html>
